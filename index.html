@@ -15,7 +15,31 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div id="idyll-mount"><div data-reactroot=""><div class="idyll-root"><div style="max-width:600px;margin:0 0 0 50px" class=" idyll-text-container"><div class="article-header"><h1 class="hed">React Chartjs</h1><h2 class="dek">Welcome to Idyll. Open index.idyll to start writing</h2><div class="byline">By: <a href="https://idyll-lang.org">Your Name Here</a></div></div><canvas width="600" height="250" idyll="[object Object]"></canvas></div></div></div></div>
+    <div id="idyll-mount"><div data-reactroot=""><div class="idyll-root"><div style="max-width:600px;margin:0 0 0 50px" class=" idyll-text-container"><div class="article-header"><h1 class="hed">React Chartjs</h1><h2 class="dek">Welcome to Idyll. Open index.idyll to start writing</h2><div class="byline">By: <a href="https://idyll-lang.org">Your Name Here</a></div></div><p>Idyll with third-party react components, such as <a href="https://github.com/reactjs/react-chartjs">react-chartjs</a>.</p><canvas width="600" height="250" idyll="[object Object]"></canvas><p>First, install the component with npm:</p><pre><code>npm install --save react-chartjs chart.js@^1.1.1</code></pre><p>Then include it in Idyll markup, for example:</p><pre><code>[ReactChartjs.Line data:`{
+	labels: [&quot;January&quot;, &quot;February&quot;, &quot;March&quot;, &quot;April&quot;, &quot;May&quot;, &quot;June&quot;, &quot;July&quot;],
+	datasets: [
+		{
+			label: &quot;My First dataset&quot;,
+			fillColor: &quot;rgba(220,220,220,0.2)&quot;,
+			strokeColor: &quot;rgba(220,220,220,1)&quot;,
+			pointColor: &quot;rgba(220,220,220,1)&quot;,
+			pointStrokeColor: &quot;#fff&quot;,
+			pointHighlightFill: &quot;#fff&quot;,
+			pointHighlightStroke: &quot;rgba(220,220,220,1)&quot;,
+			data: [65, 59, 80, 81, 56, 55, 40]
+		},
+		{
+			label: &quot;My Second dataset&quot;,
+			fillColor: &quot;rgba(151,187,205,0.2)&quot;,
+			strokeColor: &quot;rgba(151,187,205,1)&quot;,
+			pointColor: &quot;rgba(151,187,205,1)&quot;,
+			pointStrokeColor: &quot;#fff&quot;,
+			pointHighlightFill: &quot;#fff&quot;,
+			pointHighlightStroke: &quot;rgba(151,187,205,1)&quot;,
+			data: [28, 48, 40, 19, 86, 27, 90]
+		}
+	]
+}` options:`{}` width:600 height:250 /]</code></pre></div></div></div></div>
     <script src="index.js"></script>
   </body>
 </html>
