@@ -1,11 +1,11 @@
-[meta title:"React Chartjs" description:"Short description of your project" /]
+[meta title:"React Chartjs" description:"Idyll supports third-party react components, such as react-chartjs" /]
 
 [Header
   title:"React Chartjs"
   author:"Matthew Conlen"
   authorLink:"https://idyll-lang.org" /]
 
-Idyll with third-party react components, such as [react-chartjs](https://github.com/reactjs/react-chartjs).
+Idyll supports third-party react components, such as [react-chartjs](https://github.com/reactjs/react-chartjs).
 
 
 [ReactChartjs.Line data:`{
@@ -71,5 +71,8 @@ Then include it in Idyll markup, for example:
 	]
 }` options:`{}` width:600 height:250 /]
 ```
+
+Package names are mapped to their `CamelCase` representation, dots can be use to access
+inner classes.
 
 See the [source for this page](https://github.com/mathisonian/idyll-chartjs-example).
